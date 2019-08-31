@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  mesh:
+    container_name: mesh
+    image: 0xorg/mesh:latest
+    restart: always
+    ports:
+        - '60557:60557'
+        - '60558:60558'
+        - '60559:60559'
+    environment:
+       - ETHEREUM_RPC_URL=
+        - VERBOSITY=5
+        - ETHEREUM_NETWORK_ID=1
+        - BLOCK_POLLING_INTERVAL=5s
+  
+  bridge:
+    container_name: bridge
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - KOSU_JSONRPC_URL=
+      - ETHEREUM_JSONRPC_URL=
+      - MNEMONIC=
+      
+      - ACCOUNT_INDEX=0
+      - MESH_JSONRPC_URL=ws://mesh:60557
