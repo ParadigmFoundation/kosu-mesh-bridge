@@ -1,0 +1,16 @@
+{
+    "extends": "@kosu/tsc-config",
+    "compilerOptions": {
+        "outDir": "dist",
+        "rootDir": "src",
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "typeRoots": [
+            "node_modules/@types",
+        ]
+    },
+    "include": [
+        "./src/*"
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "kosu-mesh-bridge",
+  "version": "0.0.0",
+  "description": "Bridge application to post mesh orders to kosu, and vis-a-versa.",
+  "main": "index.js",
+  "repository": "https://github.com/ParadigmFoundation/kosu-mesh-bridge",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -p .",
+    "lint:fix": "tslint -p . --fix",
+    "start": "node dist/index.js",
+    "start:production": "NODE_ENV=production node dist/index.js",
+    "up": "docker-compose -f docker-compose.yml up --build",
+    "down": "docker-compose -f docker-compose.yml down -v"
+  },
+  "dependencies": {
+    "@0x/mesh-rpc-client": "^3.0.1-beta",
+    "@kosu/kosu.js": "^0.2.2",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.2.1",
+    "web3-providers": "^1.0.0-beta.55"
+  },
+  "devDependencies": {
+    "@kosu/tsc-config": "^0.1.0",
+    "@kosu/tslint-config": "^0.0.4",
+    "tslint": "^5.19.0",
+    "typescript": "^3.6.2"
+  }
+}
