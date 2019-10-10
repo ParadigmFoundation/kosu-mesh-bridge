@@ -199,7 +199,7 @@
     ethereumjs-util "^5.1.1"
     lodash "^4.17.11"
 
-"@0x/dev-utils@^2.2.2", "@0x/dev-utils@^2.2.6", "@0x/dev-utils@^2.3.1":
+"@0x/dev-utils@^2.2.2", "@0x/dev-utils@^2.3.1":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@0x/dev-utils/-/dev-utils-2.3.1.tgz#1cf0590c3c2d882c67486e51ac0365339e11a72f"
   integrity sha512-/EMJLfA1qYtj/l597Ieegt88HMLEeZPwqg5oGMXnkYAsOIhtsii8fHfJ3ZvxDHDW6nmgw81YWaXvygbeakiilg==
@@ -224,13 +224,12 @@
     jsonschema "^1.2.0"
     lodash.values "^4.3.0"
 
-"@0x/mesh-rpc-client@^3.0.1-beta":
-  version "3.0.1-beta"
-  resolved "https://registry.yarnpkg.com/@0x/mesh-rpc-client/-/mesh-rpc-client-3.0.1-beta.tgz#4aca865b0ff7b1fc2395e8ea9092c28f36404f20"
-  integrity sha512-ve1R9oJ3inFlCdztJ9KvlgvBV9v4Bxuw6PtsHdhyQu2F9Ppra6e9YdNynC3G8dcM3YOmyr/yDdzjbuO8V61UHw==
+"@0x/mesh-rpc-client@^5.0.0-beta":
+  version "5.0.0-beta"
+  resolved "https://registry.yarnpkg.com/@0x/mesh-rpc-client/-/mesh-rpc-client-5.0.0-beta.tgz#c1e7150e9281a42e5cd224a0be29424ee245a9d9"
+  integrity sha512-QdZxpDfrLp2r4WFAUkBEjhEBmocO2FKfPbHUCqQKshRgAYfbfYLFhKGyDa+dI70Cj5jyVwPZG7FQXKFR0eSpIA==
   dependencies:
     "@0x/assert" "^2.1.2"
-    "@0x/dev-utils" "^2.2.6"
     "@0x/order-utils" "^8.2.4"
     "@0x/types" "^2.4.1"
     "@0x/typescript-typings" "^4.2.4"
@@ -653,16 +652,16 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@kosu/kosu.js@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@kosu/kosu.js/-/kosu.js-0.2.2.tgz#40f2a747aec363be124b413c527040650842b732"
-  integrity sha512-aYJ5r8kj8+8a19gZEQHY9UhnACCfTXj/vQkKD0byBpOVWRHoy5lI2Ee/5JzrhtmEcukHgam5uHEG1BerqaBGVQ==
+"@kosu/kosu.js@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@kosu/kosu.js/-/kosu.js-0.3.0.tgz#d0f9feca4eb5205089af258b5f23bd66c781368a"
+  integrity sha512-WmTmXg9P36o2FX6+Sc4eBSvWxh5k2lOreXjWcDkJwNns4WlPyU+wMlwUlhjRxI7IdcKubl5QQSP7xhTtPBQ2pg==
   dependencies:
     "@0x/utils" "^4.3.1"
     "@0x/web3-providers-fork" "^0.0.7"
     "@0x/web3-wrapper" "^6.0.5"
     "@babel/core" "^7.4.4"
-    "@kosu/system-contracts" "^0.2.1"
+    "@kosu/system-contracts" "^0.3.0"
     "@kosu/tsc-config" "^0.1.0"
     "@kosu/tslint-config" "^0.0.4"
     ethereum-protocol "^1.0.1"
@@ -684,10 +683,10 @@
   dependencies:
     openzeppelin-solidity "2.1.2"
 
-"@kosu/system-contracts@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@kosu/system-contracts/-/system-contracts-0.2.1.tgz#9ed120aa953c91035dbbaef5ad661af9dc070b52"
-  integrity sha512-hfA7bc63aOvoNXlVpGj3L88hHVpiGNUMJ7/rhI0EGm9oZ0UfItHuHzMY6OxMLSs5ZNRdycft0UqPxMNsNtLbcg==
+"@kosu/system-contracts@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@kosu/system-contracts/-/system-contracts-0.3.0.tgz#b2f859a2eedaf9292226aea4113989def5517476"
+  integrity sha512-+vj1VU0wcRmzaLU78dB9VQzztrQvmNlrBk41JuJrb55vnVbTnDxSWCR++J7zbPhxgei7ORK5dGFA60Y+e4zzxg==
   dependencies:
     "@0x/base-contract" "^5.0.5"
     "@0x/contract-addresses" "^3.0.2"

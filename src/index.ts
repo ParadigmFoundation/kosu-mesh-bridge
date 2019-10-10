@@ -26,7 +26,7 @@ const {
     const _ = await mesh.subscribeToOrdersAsync(async orderEvents => {
         const kosuOrders = [];
         for (const event of orderEvents) {
-            if (event.kind !== "ADDED") {
+            if (event.endState !== "ADDED") {
                 return;
             }
 
@@ -41,8 +41,10 @@ const {
             const signed = await kosu.orderHelper.prepareForPost(kosuOrder, posterAddress);
             kosuOrders.push(signed);
         }
+
         const resp = await kosu.node.addOrders(kosuOrders);
+        console.log("Response: %o", resp);
     });
 })().catch(error => {
-    console.log(`[bridge] error in main: ${error}`);
+    console.log(`main failed with: ${error.message}`);
 });
